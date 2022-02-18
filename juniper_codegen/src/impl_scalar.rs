@@ -313,7 +313,7 @@ pub fn build_scalar(
         {
             type Error = <#from_input_value_result as ::juniper::macros::helper::ExtractError>::Error;
 
-            fn from_input_value(#from_input_value_arg: &::juniper::InputValue<#generic_type>) -> #from_input_value_result {
+            fn from_input_value(#from_input_value_arg: &::juniper::InputValue<#generic_type>) -> std::result::#from_input_value_result {
                 #from_input_value_body
             }
         }
